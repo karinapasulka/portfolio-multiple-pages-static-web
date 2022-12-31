@@ -17,6 +17,12 @@ h3 {
 h1 {
   font-size: 96px;
 }
+@media (max-width: 576px) {
+  h1 {
+    font-size: 48px;
+    line-height: 1.5;
+  }
+}
 h2 {
   font-size: 48px;
 }
@@ -25,6 +31,7 @@ h3 {
   opacity: 0.7;
   margin-bottom: 45px;
 }
+
 .info-section {
   display: flex;
   justify-content: center;
@@ -90,11 +97,17 @@ h3 {
 .project-info {
   text-align: start;
 }
+.project-title {
+  text-align: start;
+}
 @media (max-width: 576px) {
   .project-img {
     display: none;
   }
   .project-info {
+    text-align: center;
+  }
+  .project-title {
     text-align: center;
   }
   h2 {
@@ -106,4 +119,9 @@ h3 {
     text-align: center;
     margin: 0 20px;
   }
+}
+.img-style {
+  border-style: solid;
+  border-width: 12px;
+  border-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%) 1;
 }
